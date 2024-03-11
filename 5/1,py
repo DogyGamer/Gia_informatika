@@ -1,0 +1,9 @@
+def process(n):
+    return n - int(bin(n)[3:], 2)
+
+
+ans = []
+for i in range(10, 1000+1):
+    ans.append(process(i))
+
+print(len(set(ans)))
